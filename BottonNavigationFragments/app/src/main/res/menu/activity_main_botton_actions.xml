@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/first_fragment"
+            android:id="@+id/first_fragment_button"
             android:checkable="false"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="@string/first" />
 
         <item
-            android:id="@+id/second_fragment"
+            android:id="@+id/second_fragment_button"
             android:checkable="false"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="@string/second" />
 
         <item
-            android:id="@+id/third_fragment"
+            android:id="@+id/third_fragment_button"
             android:checkable="false"
             android:icon="@android:drawable/btn_star_big_on"
             android:title="@string/third" />

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">52SemanasObjetivo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="objetive_text">Qual o seu próximo objetivo?</string>
+    <string name="objective_ex">Ex: Viajem para o Japão</string>
+    <string name="guardar_semana">Quanto você deseja guardar por semana?</string>
+    <string name="comecar_economizar">Quando você quer começar a economizar?</string>
+    <string name="pagar_ex">R$ 1,00 já é um bom começo</string>
+    <string name="vamos_la">Vamos lá!</string>
+    <string name="novo_objetivo_descricao">Chegou a hora de definir seu novo objetivo! Com 52
+    semanas você tem duas opções, como deseja prosseguir?</string>
+    <string name="objetivo_manual">Objetivo manual</string>
+    <string name="objetivo_manual_descricao">Faca o controle manual de seu desafio.
+    Aqui não poderemos ajudá-lo com a missão de fazer seu dinheiro render.</string>
+    <string name="objetivo_semente">Objetivo semente</string>
+    <string name="objetivo_semente_descricao">Guarde com a Grão! Uma poupança 4.0
+    totalmente gratuita, sem taxas e com rentabilidade maior que a polpança tradicional.</string>
+</resources>
