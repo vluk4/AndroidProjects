@@ -4,6 +4,8 @@
         <item>@font/average_sans</item>
         <item>@font/averia_libre</item>
         <item>@font/baloo</item>
+        <item>@font/open_sans</item>
+        <item>@font/open_sans_semibold</item>
         <item>@font/roboto_bold</item>
         <item>@font/roboto_mono_medium</item>
     </array>
