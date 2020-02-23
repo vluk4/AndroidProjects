@@ -12,9 +12,10 @@
     <string name="novo_objetivo_descricao">Chegou a hora de definir seu novo objetivo! Com 52
     semanas você tem duas opções, como deseja prosseguir?</string>
     <string name="objetivo_manual">Objetivo manual</string>
-    <string name="objetivo_manual_descricao">Faca o controle manual de seu desafio.
+    <string name="objetivo_manual_descricao">Faça o controle manual de seu desafio.
     Aqui não poderemos ajudá-lo com a missão de fazer seu dinheiro render.</string>
     <string name="objetivo_semente">Objetivo semente</string>
     <string name="objetivo_semente_descricao">Guarde com a Grão! Uma poupança 4.0
-    totalmente gratuita, sem taxas e com rentabilidade maior que a polpança tradicional.</string>
+        totalmente gratuita, sem taxas e com rentabilidade maior que a poupança tradicional.</string>
+    <string name="parceiro">Parceiro:</string>
 </resources>

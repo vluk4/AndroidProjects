@@ -12,14 +12,28 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            style="@style/chip_parceiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/chip_text"
+            app:chipCornerRadius="18dp"
+            app:chipIcon="@drawable/ic_logobranco"
+            app:chipIconSize="24dp"
+            app:iconEndPadding="16dp"
+            app:iconStartPadding="8dp" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/ubuntu"
-            android:text="@string/objetivo_manual"
+            android:text="@string/objetivo_semente"
             android:textColor="#47DA2A"
             android:textSize="20sp" />
 
@@ -30,9 +44,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/objetivo_manual_descricao" />
+            android:text="@string/objetivo_semente_descricao" />
     </LinearLayout>
-
 
 
 </com.google.android.material.card.MaterialCardView>

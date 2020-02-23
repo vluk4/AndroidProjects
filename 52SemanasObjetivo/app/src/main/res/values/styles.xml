@@ -8,8 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="card_style" parent="CardView.Light">
-        <item name="android:elevation" tools:ignore="NewApi">16dp</item>
+    <style name="card_style" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">6dp</item>
         <item name="cardCornerRadius">20dp</item>
         <item name="cardBackgroundColor">#FFFF</item>
     </style>
@@ -24,6 +24,19 @@
     <style name="title_bold">
         <item name="android:fontFamily">@font/ubuntu_bold</item>
         <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="chip_parceiro" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">#70C75C</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:text">@string/parceiro</item>
+        <item name="android:textColor">#FFFF</item>
+    </style>
+
+    <style name="chip_text" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>
 
 </resources>
