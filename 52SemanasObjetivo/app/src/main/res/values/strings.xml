@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">52SemanasObjetivo</string>
+    <string name="app_name">52 Semanas</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="objetive_text">Qual o seu próximo objetivo?</string>
     <string name="objective_ex">Ex: Viajem para o Japão</string>
     <string name="guardar_semana">Quanto você deseja guardar por semana?</string>
@@ -18,4 +17,22 @@
     <string name="objetivo_semente_descricao">Guarde com a Grão! Uma poupança 4.0
         totalmente gratuita, sem taxas e com rentabilidade maior que a poupança tradicional.</string>
     <string name="parceiro">Parceiro:</string>
+    <string name="proximo_objetivo_descricao">O que você deseja conquistar? É sempre bom dar nomes aos nossos objetivos. Escreva abaixo o que você quer.</string>
+    <string name="quanto_deseja_pagar_descricao">Agora que você já sabe o que quer, é hora de dizer quanto pretende guardar toda semana.</string>
+    <string name="comecar_economizar_descricao">Selecione uma data para começar a economizar.</string>
+    <string name="resumo_desafio">Resumo do seu desafio</string>
+    <string name="card_resumo_title">Para alcançar o seu objetivo…</string>
+    <string name="card_resumo_title2">Você terá que guardar um valor semanal de…</string>
+    <string name="card_resumo_objetivo">Viajem para o japão</string>
+    <string name="card_resumo_semana_inicio">Semana 01</string>
+    <string name="card_resumo_ate">Até</string>
+    <string name="card_resuno_semana_fim">Semana 52</string>
+    <string name="card_resumo_data_inicio">05/02/2020</string>
+    <string name="card_resumo_data_fim">27/02/2021</string>
+    <string name="card_resumo_valor_inicio">R$ 1,00</string>
+    <string name="card_resumo_valor_fim">R$ 52,00</string>
+    <string name="card_resumo_total_texto">Você guardará um total bruto de…</string>
+    <string name="card_resumo_valor_total">R$ 1.378,00</string>
+    <string name="proximo">PRÓXIMO</string>
 </resources>
+
