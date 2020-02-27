@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dashboard Empty State.iml" filepath="$PROJECT_DIR$/Dashboard Empty State.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dashboard Empty State.iml" filepath="$PROJECT_DIR$/Dashboard Empty State.iml" group="Dashboard Empty State" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Dashboard Empty State/app" />
     </modules>
   </component>
 </project>
