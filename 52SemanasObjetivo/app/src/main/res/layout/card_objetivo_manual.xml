@@ -5,6 +5,8 @@
     style="@style/card_style"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/card_manual"
     app:cardUseCompatPadding="true">
 
     <LinearLayout

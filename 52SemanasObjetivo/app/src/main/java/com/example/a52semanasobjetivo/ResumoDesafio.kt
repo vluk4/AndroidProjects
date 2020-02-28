@@ -22,7 +22,7 @@ class ResumoDesafio : Fragment() {
 
     companion object {
         fun newInstance(): ResumoDesafio {
-            return newInstance()
+            return ResumoDesafio()
         }
     }
 }

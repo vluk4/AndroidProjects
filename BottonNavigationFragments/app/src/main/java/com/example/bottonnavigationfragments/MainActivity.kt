@@ -18,9 +18,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         setContentView(R.layout.activity_main)
 
         bottom_nav_view.setOnNavigationItemSelectedListener(this)
-
         val firstFragment = FragmentGoals.newinstance()
         openFragment(firstFragment)
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

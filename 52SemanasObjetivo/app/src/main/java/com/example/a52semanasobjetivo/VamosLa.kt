@@ -22,7 +22,7 @@ class VamosLa : Fragment() {
 
     companion object {
         fun newInstance(): VamosLa {
-            return newInstance()
+            return VamosLa()
         }
     }
 }

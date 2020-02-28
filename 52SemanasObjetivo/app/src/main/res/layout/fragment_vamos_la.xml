@@ -34,7 +34,6 @@
         style="@style/descricao_text" />
 
     <include
-        android:id="@+id/include"
         layout="@layout/card_objetivo_manual"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <include
+        android:id="@+id/card_grao"
         layout="@layout/card_objetivo_grao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,5 +53,5 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
+        app:layout_constraintTop_toBottomOf="@+id/card_manual" />
 </androidx.constraintlayout.widget.ConstraintLayout>

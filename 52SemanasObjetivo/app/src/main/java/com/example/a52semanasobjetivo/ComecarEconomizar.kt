@@ -22,7 +22,7 @@ class ComecarEconomizar : Fragment() {
 
     companion object {
         fun newInstance(): ComecarEconomizar {
-            return newInstance()
+            return ComecarEconomizar()
         }
     }
 }

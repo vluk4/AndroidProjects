@@ -22,9 +22,7 @@ class QuantoDesejaPagar : Fragment() {
 
     companion object{
         fun newInstance(): QuantoDesejaPagar{
-            return newInstance()
+            return QuantoDesejaPagar()
         }
     }
-
-
 }
