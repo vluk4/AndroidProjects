@@ -8,11 +8,18 @@
     <string name="casamento">Casamento</string>
     <string name="semanas_restantes">Semanas restantes</string>
     <string name="sobre_title">Sobre o desafio 52 Semanas para poupar dinheiro</string>
-    <string name="descricao">Como o próprio nome já diz, o desafio  estimula a economia semanal de certa quantia, durante um ano. A proposta  original é começar a primeira semana guardando R$1, na segunda semana guardando R$2, na terceira semana R$3 e asssim por diante, até chegar na semana 52 poupando R$52.</string>
+    <string name="descricao">Como o próprio nome já diz, o desafio  estimula a economia semanal de certa quantia,
+        durante um ano. A proposta  original é começar a primeira semana guardando R$1, na segunda semana guardando R$2,
+        na terceira semana R$3 e asssim por diante, até chegar na semana 52 poupando R$52.\n No final do período, caso o plano
+        seja seguido corretamente, você terá guardado a quantia de R$1.378.\n Para acompanhar
+        melhor a evolucão da economia e não correr o risco de confundir os valores, esse aplicativo foi desenvolvido justamente para te ajudar a
+        controlar tudo, o valor poupado em cada uma delas e até mesmo fazer um somatório do valor acumulado com o tempo.\n A beleza
+        e eficiência do desafio reside na sua simplicidade e no impulso do hábito que ele é capaz de criar - sem mencionar o grande número
+        de mudanças boas que ele trará para sua vida.
+    </string>
     <string name="aguardar_dinheiro">Aguardando seu dinheiro</string>
     <string name="parceiro">Parceiro:</string>
     <string name="_57">57</string>
     <string name="faltando">R$ 957 de R$ 1000,00</string>
-    <string name="semanas_restantes">Semanas restantes</string>
     <string name="finaliza_em">Finaliza em</string>
 </resources>
