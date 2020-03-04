@@ -2,32 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".LastCardDigitDialogFragment">
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="86dp"
-        android:contentDescription="@string/card_image_description"
-        android:src="@drawable/pngwave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_medium"
         android:text="@string/text_ultimo_digito"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,35 +34,46 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_zero"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_zero" />
+                android:text="@string/digit_zero"
+                android:checked="true"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_one"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_one" />
+                android:text="@string/digit_one"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_two"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_two" />
+                android:text="@string/digit_two"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button"/>
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_three"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_three" />
+                android:text="@string/digit_three"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button"/>
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_four"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_four" />
+                android:text="@string/digit_four"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button"/>
 
         </LinearLayout>
 
@@ -76,35 +82,45 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_five"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_five" />
+                android:text="@string/digit_five"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_six"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_six" />
+                android:text="@string/digit_six"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_seven"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_seven" />
+                android:text="@string/digit_seven"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_eight"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_eight" />
+                android:text="@string/digit_eight"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
-            <RadioButton
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_digit_nine"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:text="@string/digit_nine" />
+                android:text="@string/digit_nine"
+                android:background="@drawable/radio_button_digit_selector"
+                style="@style/last_digit_radio_button" />
 
         </LinearLayout>
 
