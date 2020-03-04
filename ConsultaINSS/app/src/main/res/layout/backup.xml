@@ -25,7 +25,7 @@
             android:paddingEnd="0dp"
             android:text="@string/text_ultimo_digito"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,38 +34,35 @@
             android:id="@+id/imageButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/information"
-            android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:src="@android:drawable/ic_menu_info_details" />
+            android:paddingStart="16dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_menu_info_details"
+            android:contentDescription="@string/information" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
         android:background="@drawable/radio_group_strock"
         android:orientation="vertical"
         android:padding="1dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
 
-        <RadioGroup
-            android:id="@+id/radio_group1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radio_digit_zero"
@@ -108,16 +105,12 @@
                 android:background="@drawable/radio_button_digit_selector"
                 android:text="@string/digit_four" />
 
-        </RadioGroup>
+        </LinearLayout>
 
-        <RadioGroup
-            android:id="@+id/radio_group2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group1">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radio_digit_five"
@@ -159,6 +152,7 @@
                 android:background="@drawable/radio_button_digit_selector"
                 android:text="@string/digit_nine" />
 
-        </RadioGroup>
-    </LinearLayout>
+        </LinearLayout>
+
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
