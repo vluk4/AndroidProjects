@@ -11,6 +11,8 @@ class CalendarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
 
+        setDateText()
+
     }
 
     fun setDateText(){
@@ -18,7 +20,7 @@ class CalendarActivity : AppCompatActivity() {
         val lastDigit = intent.getStringExtra("digit")
         val salary = intent.getStringExtra("choice")
         if(lastDigit == "0"){
-            text_janeiro.text = "07/02/2020"
+            date_janeiro.text = "07/02/2020"
         }
     }
 }
