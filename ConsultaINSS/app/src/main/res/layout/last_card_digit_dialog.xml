@@ -3,59 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".LastCardDigitDialogFragment">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="@string/text_ultimo_digito"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/ubuntu_medium"
-            android:paddingStart="8dp"
-            android:paddingEnd="0dp"
-            android:text="@string/text_ultimo_digito"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="textView"
+        tools:layout_editor_absoluteX="307dp" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/information"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:src="@android:drawable/ic_menu_info_details" />
-
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@id/textView"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/information"
+        android:src="@android:drawable/ic_menu_info_details"
+        android:onClick="showDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="2dp"
         android:background="@drawable/radio_group_strock"
         android:orientation="vertical"
         android:padding="1dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioGroup
             android:id="@+id/radio_group1"
@@ -161,4 +158,5 @@
 
         </RadioGroup>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

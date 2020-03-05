@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         select_digit.radio_group1.clearCheck()
         select_digit.radio_group2.clearCheck()
-        select_digit.radio_group1.setOnCheckedChangeListener(listener1);
-        select_digit.radio_group2.setOnCheckedChangeListener(listener2);
+        select_digit.radio_group1.setOnCheckedChangeListener(listener1)
+        select_digit.radio_group2.setOnCheckedChangeListener(listener2)
     }
 
     fun onRadioButtonClicked(view: View) {
@@ -61,4 +61,9 @@ class MainActivity : AppCompatActivity() {
                 select_digit.radio_group1.setOnCheckedChangeListener(listener1)
             }
         }
+
+    fun showDialog(view: View) {
+        val newFragment = CardInformationDialogFragment()
+        newFragment.show(supportFragmentManager,"card_info")
+    }
 }

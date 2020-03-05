@@ -5,7 +5,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text_ultimo_digito">Selecione o ultimo dígito do seu cartão INSS.</string>
+    <string name="text_ultimo_digito">Selecione o ultimo dígito do seu cartão.</string>
     <string name="digit_zero">0</string>
     <string name="digit_one">1</string>
     <string name="digit_two">2</string>
@@ -20,4 +20,5 @@
     <string name="salario_minimo">É beneficiário de mais de um salário mínimo?</string>
     <string name="information">informações</string>
     <string name="ver_calendario">Ver Calendário</string>
+    <string name="cancel">OK</string>
 </resources>
