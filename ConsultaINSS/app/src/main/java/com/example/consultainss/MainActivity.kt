@@ -1,8 +1,8 @@
 package com.example.consultainss
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         select_digit.radio_group2.clearCheck()
         select_digit.radio_group1.setOnCheckedChangeListener(listener1)
         select_digit.radio_group2.setOnCheckedChangeListener(listener2)
+
     }
 
     fun onRadioButtonClicked(view: View) {
@@ -65,5 +66,23 @@ class MainActivity : AppCompatActivity() {
     fun showDialog(view: View) {
         val newFragment = CardInformationDialogFragment()
         newFragment.show(supportFragmentManager,"card_info")
+    }
+
+    fun launchCalendarActivity(view: View) {
+        val intent = Intent(this, CalendarActivity::class.java)
+        val chkId0 = radioGroup.checkedRadioButtonId
+        val chkId1 = select_digit.radio_group1.checkedRadioButtonId
+        val chkId2 = select_digit.radio_group2.checkedRadioButtonId
+        val realCheck = if (chkId1 == -1) chkId2 else chkId1
+
+
+        val checkedButtonSalary = findViewById<RadioButton>(chkId0)
+        val choice = checkedButtonSalary.text.toString()
+        val checkedButtonDigit = findViewById<RadioButton>(realCheck)
+        val digit = checkedButtonDigit.text.toString()
+        intent.putExtra("digit", digit)
+        intent.putExtra("choice", choice)
+
+        startActivity(intent)
     }
 }

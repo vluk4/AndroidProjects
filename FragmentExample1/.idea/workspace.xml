@@ -7,32 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac09953d-bc76-400e-ba30-4a718b4827ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_nao_checked.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_nao_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_nao_unchecked.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_sim_checked.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_sim_selector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/drawable/radio_button_sim_unchecked.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/java/com/example/a52semanasobjetivo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/java/com/example/a52semanasobjetivo/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/java/com/example/a52semanasobjetivo/VamosLa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/java/com/example/a52semanasobjetivo/VamosLa.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/card_objetivo_manual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/card_objetivo_manual.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/fragment_proximo_objetivo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/fragment_proximo_objetivo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/fragment_vamos_la.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../52SemanasObjetivo/app/src/main/res/layout/fragment_vamos_la.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/java/com/example/consultainss/CalendarActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/layout/activity_calendar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TwoActivities/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/java/com/example/consultainss/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/java/com/example/consultainss/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsultaINSS/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivities/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivities/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivities/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivities/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,12 +68,6 @@
         <option value="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61_jar.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
   </component>
   <component name="ProjectId" id="1YZnUycUvaePdzir9pJAOs6wG5f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
