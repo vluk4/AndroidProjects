@@ -75,14 +75,18 @@ class MainActivity : AppCompatActivity() {
         val chkId2 = select_digit.radio_group2.checkedRadioButtonId
         val realCheck = if (chkId1 == -1) chkId2 else chkId1
 
-
         val checkedButtonSalary = findViewById<RadioButton>(chkId0)
         val choice = checkedButtonSalary.text.toString()
-        val checkedButtonDigit = findViewById<RadioButton>(realCheck)
-        val digit = checkedButtonDigit.text.toString()
-        intent.putExtra("digit", digit)
-        intent.putExtra("choice", choice)
+        if (realCheck == -1){
+            tvError.visibility = View.VISIBLE
+        }else{
+            tvError.visibility = View.INVISIBLE
+            val checkedButtonDigit = findViewById<RadioButton>(realCheck)
+            val digit = checkedButtonDigit.text.toString()
 
-        startActivity(intent)
+            intent.putExtra("digit", digit)
+            intent.putExtra("choice", choice)
+            startActivity(intent)
+        }
     }
 }

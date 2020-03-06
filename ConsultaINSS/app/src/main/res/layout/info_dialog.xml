@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="331dp"
-        android:layout_height="222dp"
+        android:layout_width="283dp"
+        android:layout_height="201dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pngwave" />
+        app:srcCompat="@drawable/cartao_info" />
 </androidx.constraintlayout.widget.ConstraintLayout>
