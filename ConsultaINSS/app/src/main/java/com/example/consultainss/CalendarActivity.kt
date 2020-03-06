@@ -1,8 +1,15 @@
 package com.example.consultainss
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.widget.EditText
+import androidx.appcompat.app.ActionBar
+import androidx.core.app.ShareCompat
 import kotlinx.android.synthetic.main.activity_calendar.*
 
 class CalendarActivity : AppCompatActivity() {
@@ -11,10 +18,26 @@ class CalendarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendar)
 
+        setSupportActionBar(findViewById(R.id.my_toolbar_calendar))
         setDateText()
 
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_share,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.menu_share_calendar -> {
+            shareText()
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
     fun setDateText(){
         val intent = intent
         val lastDigit = intent.getStringExtra("digit")
@@ -247,5 +270,16 @@ class CalendarActivity : AppCompatActivity() {
             date_novembro.text = getString(R.string.D9NOVEMBRO)
             date_dezembro.text = getString(R.string.D9DEZEMBRO)
         }
+    }
+
+    fun shareText() {
+        val txt = "http://www.google.com.br"
+        val mimeType = "text/plain"
+        ShareCompat.IntentBuilder
+            .from(this)
+            .setType(mimeType)
+            .setChooserTitle(R.string.share_text_with)
+            .setText(txt)
+            .startChooser()
     }
 }

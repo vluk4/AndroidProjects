@@ -7,12 +7,24 @@
     android:orientation="vertical"
     tools:context=".CalendarActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/my_toolbar_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Consulta INSS"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:menu="@menu/menu_share"/>
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvCalendario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ubuntu_bold"
         android:text="@string/calendario_2020"
         android:textAlignment="center"
         android:textSize="32sp"
@@ -32,257 +44,256 @@
 
             <TextView
                 android:id="@+id/text_janeiro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/janeiro"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/date_janeiro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_janeiro"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_fevereiro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/fevereiro"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_janeiro" />
 
             <TextView
                 android:id="@+id/date_fevereiro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_fevereiro"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_marco"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/marco"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_fevereiro" />
 
             <TextView
                 android:id="@+id/date_marco"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_marco"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_abril"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/abril"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_marco" />
 
             <TextView
                 android:id="@+id/date_abril"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_abril"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_maio"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/maio"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_abril" />
 
             <TextView
                 android:id="@+id/date_maio"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_maio"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_junho"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/junho"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_maio" />
 
             <TextView
                 android:id="@+id/date_junho"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_junho"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_julho"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/julho"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_junho" />
 
             <TextView
                 android:id="@+id/date_julho"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_julho"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_agosto"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/agosto"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_julho" />
 
             <TextView
                 android:id="@+id/date_agosto"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_agosto"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_setembro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/setembro"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_agosto" />
 
             <TextView
                 android:id="@+id/date_setembro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_setembro"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_outubro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/outubro"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_setembro" />
 
             <TextView
                 android:id="@+id/date_outubro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_outubro"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_novembro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:text="@string/novembro"
-                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_outubro" />
 
             <TextView
                 android:id="@+id/date_novembro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_novembro"
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/text_dezembro"
+                style="@style/month_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
                 android:text="@string/dezembro"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_novembro" />
 
             <TextView
                 android:id="@+id/date_dezembro"
+                style="@style/date_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="32dp"
                 android:text="00/00"
-                android:textSize="24sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/text_dezembro"
                 app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </LinearLayout>

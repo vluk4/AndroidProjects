@@ -154,7 +154,7 @@
     <string name="D4SDEZEMBRO">07/01/2021</string>
     <!--DIGÍTO 5 E ATÉ UM SALÁRIO MÍNIMO-->
     <string name="D5NJANEIRO">31/01/2020</string>
-    <string name="D5NFEVEREIRO">29/02/2020</string>
+    <string name="D5NFEVEREIRO">28/02/2020</string>
     <string name="D5NMARCO">31/03/2020</string>
     <string name="D5NABRIL">30/04/2020</string>
     <string name="D5NMAIO">29/05/2020</string>
@@ -231,4 +231,8 @@
     <string name="D9NOVEMBRO">04/12/2020</string>
     <string name="D9DEZEMBRO">07/01/2021</string>
     <string name="digit_not_selected">Por favor, selecione o último dígito do seu cartão!</string>
+    <string name="consulta_inss">Consulta INSS</string>
+    <string name="share_text_with">Compartilhar esse aplicativo com:</string>
+    <string name="compartilhar_aplicativo">Compartilhar Aplicativo</string>
+    <string name="share_button">Share Button</string>
 </resources>

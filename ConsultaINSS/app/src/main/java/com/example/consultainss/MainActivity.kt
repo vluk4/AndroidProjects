@@ -6,9 +6,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.last_card_digit_dialog.*
 import kotlinx.android.synthetic.main.last_card_digit_dialog.view.*
+import kotlinx.android.synthetic.main.last_card_digit_dialog.view.radio_digit_zero
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         select_digit.radio_group1.setOnCheckedChangeListener(listener1)
         select_digit.radio_group2.setOnCheckedChangeListener(listener2)
 
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+
     }
 
     fun onRadioButtonClicked(view: View) {
@@ -32,12 +37,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.rbSim ->{
                     if (checked){
                         rbSim.setTextColor(Color.WHITE)
-                        rbNao.setTextColor(resources.getColor(R.color.ColorGreen))
+                        rbNao.setTextColor(resources.getColor(R.color.colorPrimary))
                     }
                 }
                 R.id.rbNao ->{
                     if (checked){
-                        rbSim.setTextColor(Color.RED)
+                        rbSim.setTextColor(resources.getColor(R.color.colorPrimary))
                         rbNao.setTextColor(Color.WHITE)
                     }
                 }
