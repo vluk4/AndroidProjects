@@ -235,4 +235,5 @@
     <string name="share_text_with">Compartilhar esse aplicativo com:</string>
     <string name="compartilhar_aplicativo">Compartilhar Aplicativo</string>
     <string name="share_button">Share Button</string>
+    <string name="back_button">Back Button</string>
 </resources>

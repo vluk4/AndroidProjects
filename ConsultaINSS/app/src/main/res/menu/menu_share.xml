@@ -6,4 +6,5 @@
         android:icon="@drawable/share_variant"
         android:title="@string/share_button"
         app:showAsAction="always"/>
+
 </menu>

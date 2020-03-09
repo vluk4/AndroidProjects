@@ -6,12 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.last_card_digit_dialog.*
 import kotlinx.android.synthetic.main.last_card_digit_dialog.view.*
-import kotlinx.android.synthetic.main.last_card_digit_dialog.view.radio_digit_zero
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +29,6 @@ class MainActivity : AppCompatActivity() {
     fun onRadioButtonClicked(view: View) {
         if (view is RadioButton){
             val checked = view.isChecked
-
             when(view.getId()){
                 R.id.rbSim ->{
                     if (checked){
