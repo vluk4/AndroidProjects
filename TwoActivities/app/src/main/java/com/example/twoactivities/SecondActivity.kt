@@ -29,7 +29,7 @@ class SecondActivity : AppCompatActivity() {
 
     fun returnReply(view: View) {
         val mReply = findViewById<EditText>(R.id.editText_second)
-        val reply: String = mReply.getText().toString()
+        val reply: String = mReply.text.toString()
         val replyIntent = intent
 
         replyIntent.putExtra(EXTRA_REPLY, reply)
