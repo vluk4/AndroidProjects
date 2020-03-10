@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.last_card_digit_dialog.view.*
 
-
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,18 +75,27 @@ class MainActivity : AppCompatActivity() {
         val chkId2 = select_digit.radio_group2.checkedRadioButtonId
         val realCheck = if (chkId1 == -1) chkId2 else chkId1
 
-        val checkedButtonSalary = findViewById<RadioButton>(chkId0)
-        val choice = checkedButtonSalary.text.toString()
-        if (realCheck == -1){
-            tvError.visibility = View.VISIBLE
-        }else{
-            tvError.visibility = View.INVISIBLE
-            val checkedButtonDigit = findViewById<RadioButton>(realCheck)
-            val digit = checkedButtonDigit.text.toString()
+        when {
+            chkId0 == -1 -> {
+                tvError2.visibility = View.VISIBLE
+            }
+            realCheck == -1 -> {
+                tvError.visibility = View.VISIBLE
+            }
+            else -> {
+                val checkedButtonSalary = findViewById<RadioButton>(chkId0)
+                val choice = checkedButtonSalary.text.toString()
 
-            intent.putExtra("digit", digit)
-            intent.putExtra("choice", choice)
-            startActivity(intent)
+                tvError.visibility = View.INVISIBLE
+                tvError2.visibility = View.INVISIBLE
+
+                val checkedButtonDigit = findViewById<RadioButton>(realCheck)
+                val digit = checkedButtonDigit.text.toString()
+
+                intent.putExtra("digit", digit)
+                intent.putExtra("choice", choice)
+                startActivity(intent)
+            }
         }
     }
 }

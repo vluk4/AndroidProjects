@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".CalendarActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/my_toolbar_calendar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:title="Consulta INSS"
-        app:titleTextColor="@android:color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:menu="@menu/menu_share"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvCalendario"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/ubuntu_bold"
-        android:text="@string/calendario_2020"
-        android:textAlignment="center"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="viewStart"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <ScrollView
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/colorPrimary"
+            android:textAlignment="viewStart"
+            app:expandedTitleTextAppearance="@style/colapsebar"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="@string/calendario_2020">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/blue" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/my_toolbar_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:textAlignment="viewStart"
+                app:menu="@menu/menu_share"
+                app:navigationIcon="@drawable/arrow_left"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/calendar_list_backgroud"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCalendario">
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendario"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -298,5 +308,5 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -20,8 +20,13 @@ class CalendarActivity : AppCompatActivity() {
         setContentView(R.layout.activity_calendar)
 
         setSupportActionBar(findViewById(R.id.my_toolbar_calendar))
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        my_toolbar_calendar.setNavigationIcon(R.drawable.arrow_left)
+        my_toolbar_calendar.setNavigationOnClickListener {
+            finish()
+        }
         setDateText()
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

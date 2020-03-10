@@ -6,6 +6,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_ultimo_digito">Selecione o ultimo dígito do seu cartão.</string>
+    <string name="minimun_salary_not_selected">Selecione uma opção!</string>
     <string name="digit_zero">0</string>
     <string name="digit_one">1</string>
     <string name="digit_two">2</string>
@@ -236,4 +237,5 @@
     <string name="compartilhar_aplicativo">Compartilhar Aplicativo</string>
     <string name="share_button">Share Button</string>
     <string name="back_button">Back Button</string>
+    <string name="blue">blue</string>
 </resources>

@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">#2196F3</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
@@ -22,6 +22,15 @@
     <style name="date_style">
         <item name="android:fontFamily">@font/ubuntu_medium</item>
         <item name="android:textSize">20sp</item>
+    </style>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <style name="colapsebar" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@android:color/secondary_text_light</item>
     </style>
 
 </resources>
