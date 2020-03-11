@@ -9,10 +9,14 @@ import com.example.recyclerview.model.Person
 import com.example.recyclerview.model.person
 import kotlinx.android.synthetic.main.list_persons.view.*
 
-class MyAdapter(private val persons: MutableList<Person>): RecyclerView.Adapter<MyAdapter.MyviewHolder>() {
-    class MyviewHolder (itemView: View): RecyclerView.ViewHolder(itemView){
-        fun bind(person: Person){
-            itemView.tvName.text = person.name.first().toString()
+class MyAdapter(private val persons: MutableList<Person>) :
+    RecyclerView.Adapter<MyAdapter.MyviewHolder>() {
+    class MyviewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(person: Person) {
+            with(person) {
+                itemView.tvName.text = person.name
+                itemView.tvEmail.text = person.email
+            }
         }
     }
 
